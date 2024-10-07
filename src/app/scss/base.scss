@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+*::before,
+*::after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+::selection{
+    background:  rgba(255,0,0,.2);
+    color: white;
+}
+body, p{
+
+    font-weight: 300;
+    border: 0;
+}
+blockquote, small {
+    font-family: 'Lora', serif;
+    font-weight: 400;
+    font-style: italic;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+button{
+    background: none;
+    border: none;
+    outline: none;
+}
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-thumb {
+    background-color: white;
+}
+::-webkit-scrollbar-track {
+    background-color: black;
+}
