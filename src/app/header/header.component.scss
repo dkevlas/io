@@ -1,0 +1,24 @@
+@import '../../styles.scss';
+.container{
+    
+    .imagen{
+        img{
+            width: 200px;
+        }
+    }
+    .content{
+
+    }
+}
+@include mediaQuerie(medium){
+    .container{
+        // background-color: red;
+        flex-direction: row;
+        .imagen{
+            //flex-grow: 1;
+        }
+        .content{
+            //flex-grow: 2;
+        }
+    }
+}
