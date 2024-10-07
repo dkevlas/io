@@ -1,7 +1,45 @@
+//BREAKPOINT
 $breakpoint: (
     small: 0px,
     medium: 640px,
     large: 1024px,
     xlarge: 1200px,
     xxlarge: 1440px
-)
+);
+
+// Z-INDEX
+$z-back: -1;
+$z-normal: 1;
+$z-element: 10;
+$z-fixed: 100;
+$z-popup: 500;
+$z-modal: 1000;
+
+//PALETAS DE COLORES
+
+//COLORES PRIMARIOS
+$negro-intenso: #0C0C0C;
+$gris-oscuro: #3D3D3D;
+$negro-absoluto: #000000;
+//COLORES SECUNDARIOS
+$blanco-humo: #F1F1F1;
+$gris-plateado: #B4B4B4;
+$blanco-absoluto: #FFFFFF;
+//COLORES DE ACENTO
+$rojo-sangre: #8B0000;
+$rojo-oscuro: #560000;
+$rojo-brillante: #FF1111;
+
+:root{
+    --primary-color-default: #{$negro-intenso};
+    --primary-color-muted: #{$gris-oscuro};
+    --primary-color-contrast: #{$negro-absoluto};
+
+    --secondary-color-default: #{$blanco-humo};
+    --secondary-color-muted: #{$gris-plateado};
+    --secondary-color-contrast: #{$blanco-absoluto};
+
+    --accent-color-default: #{$rojo-sangre};
+    --accent-color-muted: #{$rojo-oscuro};
+    --accent-color-contrast: #{$rojo-brillante};
+}
