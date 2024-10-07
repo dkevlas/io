@@ -1,27 +1,40 @@
 # Kevlas
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.4.
+# Portafolio de Kevin Blas
 
-## Development server
+¡Bienvenido a mi portafolio web! Aquí puedes explorar algunos de los proyectos que he creado mientras aprendía sobre desarrollo web.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## Sobre mí
 
-## Code scaffolding
+Soy un aspirante a desarrollador full stack con experiencia en frontend, especializado en tecnologías como Angular, HTML, CSS y JavaScript. Actualmente, estoy en transición hacia el desarrollo full stack, con un enfoque en aprender API Rest con Node.js, Java con Spring Boot, y bases de datos SQL/NoSQL.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Proyectos
 
-## Build
+Aquí hay algunos de los proyectos en los que he trabajado:
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+Estos proyectos son una interpretación de un diseño web que encontré en Pinterest. He utilizado HTML, CSS, SASS, JavaScript, TypeScript y Angular para replicar su estructura y estilo, enfocándome en la usabilidad y la experiencia del usuario. Y he decidido aplicar técnicas de diseño responsivo.
 
-## Running unit tests
+1. **[Your Name](https://github.com/dkevlas/YourNameClone.git)**
+   - Tecnologías: HTML, CSS, SASS, Angular.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+2. **[Native](https://github.com/dkevlas/NativeClone.git)**
+   - Tecnologías: HTML, CSS, SASS.
 
-## Running end-to-end tests
+## Habilidades
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+- HTML
+- CSS
+- SASS
+- JavaScript
+- TypeScript
+- Angular
 
-## Further help
+## Contacto
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+Si deseas saber más sobre mí o discutir sobre una posible colaboración, no dudes en contactarme:
+
+- Correo: [dennisk.blas@gmail.com](dennisk.blas@gmail.com)
+- LinkedIn: [mi-usuario](enlace-linkedin)
+- GitHub: [dkevlas](https://github.com/dkevlas)
+
+¡Gracias por visitar mi portafolio!
