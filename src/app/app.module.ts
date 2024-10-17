@@ -3,27 +3,24 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { HeaderComponent } from './components/header/header.component';
-import { SkillsComponent } from './components/skills/skills.component';
-import { AboutComponent } from './components/about/about.component';
-import { ProjectsComponent } from './components/projects/projects.component';
 import { ContactComponent } from './components/contact/contact.component';
-import { ProjectComponent } from './components/projects/project/project.component';
+import { ProjectsModule } from './components/projects/projects.module';
+import { HomeModule } from './components/home/home.module';
+import { BaseModule } from './base/base.module';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HeaderComponent,
-    SkillsComponent,
-    AboutComponent,
-    ProjectsComponent,
     ContactComponent,
-    ProjectComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ProjectsModule,
+    HomeModule,
+    BaseModule
   ],
+  exports: [],
   providers: [],
   bootstrap: [AppComponent]
 })
