@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+//import * as emailjs from '@emailjs/browser' //AGREGADO NADA MAS
 
 interface Contact{
   phone: string,
