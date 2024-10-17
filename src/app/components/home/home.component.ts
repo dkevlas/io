@@ -1,11 +1,11 @@
 import { AfterViewInit, Component, OnDestroy } from '@angular/core';
 
 @Component({
-  selector: 'app-header',
-  templateUrl: './header.component.html',
-  styleUrl: './header.component.scss'
+  selector: 'app-home',
+  templateUrl: './home.component.html',
+  styleUrl: './home.component.scss'
 })
-export class HeaderComponent implements AfterViewInit, OnDestroy{
+export class HomeComponent implements AfterViewInit, OnDestroy{
   private blinkDestroy: any
   private writeNameDestroy: any
 
@@ -43,7 +43,7 @@ export class HeaderComponent implements AfterViewInit, OnDestroy{
     }, 300)
   }
 
-  linkCV: string = 'https://drive.google.com/uc?id=1r4JIch_s6YbLsn7CP1k1FRVO5nzexq1J&export=download'
+  linkCV: string = 'https://drive.google.com/uc?id=1nPkR3UC0PLGtRYwpltVjT4dz6Qcyfo5S&export=download'
   downLoadCV(){
     const link = document.createElement('a'); 
     link.href = this.linkCV;

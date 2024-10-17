@@ -1,0 +1,41 @@
+@import '../../../../styles.scss';
+
+.container{
+    min-width: 300px;
+    position: relative;
+    .content{
+        padding: 1em clamp(1rem, -0.765rem + 9.412vw, 3rem);
+        text-align: center;
+        h2{
+            @include styleH2;
+            margin-bottom: .5em;
+        }
+        p{
+            font-size: clamp(1rem, 0.786rem + 0.536vw, 1.188rem);
+            color: var(--secondary-color-default);
+            text-wrap: pretty;
+        }
+    }
+}
+
+@include mediaQuerie(medium){
+    .container{
+        .content{
+            max-width: 1200px;
+            margin: auto;
+            p{
+                margin: auto;
+                width: 90%;
+            }
+        }
+    }
+}
+@include mediaQuerie(large){
+    .container{
+        .content{
+            p{
+                width: 80%;
+            }
+        }
+    }
+}

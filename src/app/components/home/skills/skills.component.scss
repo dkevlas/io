@@ -1,0 +1,102 @@
+@import '../../../../styles.scss';
+.container{
+    min-width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+    h2{
+        @include styleH2;
+    }
+    .items{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 10px;
+        margin-bottom: 2em;
+        .block{
+            width: 280px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            h3{
+                font-size: clamp(1.125rem, 0.458rem + 1.333vw, 1.625rem);
+                color: var(--secondary-color-default);
+                margin-bottom: .5em;
+                position: relative;
+                text-wrap: nowrap;
+                width: 100%;
+                text-align: center;
+                &::after{
+                    content: '';
+                    position: absolute;
+                    width: 100%;
+                    padding: 1px;
+                    bottom: 0;
+                    left: 0;
+                    box-shadow: 1px 1px 10px var(--accent-color-contrast), 1px 1px 10px var(--accent-color-contrast);
+                    background-color: var(--accent-color-contrast);
+                }
+            }
+            .flex{
+                display: flex;
+                width: 90%;
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 1em;
+                .item{
+                    filter: grayscale(1);
+                    outline: 2px solid var(--accent-color-contrast);
+                    img{
+                        width:clamp(1.563rem, 1.136rem + 2.131vw, 2.5rem);
+                        aspect-ratio: 1/1;
+                        display: block;
+                        object-fit: cover;
+                    }
+                    &.active{
+                        filter: grayscale(0);
+                    }
+                }
+            }
+        }
+    }
+}
+
+@include mediaQuerie(medium){
+    .container{
+        .items{
+            width: 100%;
+            .block{
+                .flex{
+                    width: 80%;
+                }
+            }
+        }
+    }
+}
+@include mediaQuerie(large){
+    .container{
+        .items{
+            flex-direction: row;
+            padding: 0 15%;
+            gap: 45px;
+            .block{
+                width: 320px;
+                .flex{
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+@include mediaQuerie(xlarge){
+    .container{
+        .items{
+            padding: 0 15%;
+            flex-direction: row;
+        }
+    }
+}

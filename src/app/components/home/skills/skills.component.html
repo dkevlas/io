@@ -1,0 +1,23 @@
+<div class="skills">
+    <div class="container">
+        <h2>Skills</h2>
+        <div class="items">
+            <div class="block">
+                <h3>Desarrollo Frontend</h3>
+                <div class="flex">
+                    <div [ngClass]="{'item': item, 'active': i === indexFrontend}" *ngFor="let item of items; let i = index" (mouseover)="mouseIn(i)" (mouseleave)="mouseOut(i)">
+                        <img [src]="item.img" alt="{{item.name}}" title="{{item.name}}">
+                    </div>
+                </div>
+            </div>
+            <div class="block">
+                <h3>Tecnologías y Herramientas</h3>
+                <div class="flex">
+                    <div [ngClass]="{'item': item, 'active': i === indexHerramientas}" *ngFor="let item of items2; let i = index" (mouseover)="mouseIn2(i)" (mouseleave)="mouseOut2(i)">
+                        <img [src]="item.img" alt="{{item.name}}" title="{{item.name}}">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
