@@ -1,0 +1,80 @@
+@import '../../../styles.scss';
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-width: 300px;
+    height: 3rem;
+    padding: 0 clamp(1rem, 0.559rem + 2.353vw, 1.5rem);
+    position: sticky;
+    top: 0;
+    margin-bottom: -3em;
+    background-color: rgba($color: #000000, $alpha: 0.5);
+    backdrop-filter: blur(10px);
+    z-index: $z-fixed;
+    .logo{
+        font-size: clamp(1.75rem, 1.75rem + 0.278vw, 2rem);
+        user-select: none;
+        color: var(--secondary-color-default);
+        font-family: 'Bebas Neue', serif;
+        z-index: $z-element;
+    }
+    .menu{
+        display: none;
+        transition: left .25s;
+        &.small{
+            background: radial-gradient(circle, rgba(255,0,0,.5) 0%, rgba(0,0,0,.5) 100%);
+            backdrop-filter: blur(10px);
+            box-shadow: 8px 0px 32px rgba(0,0,0,.5);
+            position: fixed;
+            top: 3rem;
+            bottom: 0;
+            width: 200px;
+            height: calc(100vh - 3rem);
+            display: flex;
+            flex-direction: column;
+            justify-content: start;
+            align-items: start;
+            gap: 1em;
+            padding-top: 4em;
+            z-index: $z-fixed;
+        }
+        .link{
+            cursor: pointer;
+            font-size: clamp(1rem, 0.857rem + 0.381vw, 1.2rem);
+            color: var(--secondary-color-default);
+            //text-shadow: 0 0 5px var(--accent-color-contrast), 0 0 10px var(--accent-color-contrast);
+            padding-left: .5em;
+            &:hover{
+                text-decoration: underline;
+            }
+        }
+    }
+    .menu-toggle{
+        cursor: pointer;
+        svg{
+            width: 25px;
+            fill: var(--secondary-color-default);
+            //filter: drop-shadow(0 0 5px var(--accent-color-contrast)) drop-shadow(0 0 10px var(--accent-color-contrast));
+            &:hover{
+                color: var(--secondary-color-contrast);
+            }
+            &:active{
+                color: var(--secondary-color-muted);
+            }
+        }
+    }
+}
+@include mediaQuerie(large){
+    .nav{
+        .menu{
+            &.large{
+                display: flex;
+                gap: clamp(3rem, 2.286rem + 1.905vw, 4rem);
+            }
+        }
+        .menu-toggle{
+            display: none;
+        }
+    }
+}
