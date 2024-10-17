@@ -6,6 +6,9 @@
 @mixin styleH2(){
     cursor: default;
     color: var(--secondary-color-contrast);
-    font-size: clamp(1.7rem, 1.05rem + 2.6vw, 3rem);
+    font-size: clamp(1.7rem, 1.2rem + 2vw, 2.7rem);
     text-shadow: 1px 1px 5px var(--accent-color-contrast), 1px 1px 15px var(--accent-color-contrast);
+}
+@mixin textShadow(){
+    text-shadow: 0 0 15px var(--accent-color-contrast), 0 0 15px var(--accent-color-contrast), 0 0 10px var(--accent-color-contrast);
 }
