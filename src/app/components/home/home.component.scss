@@ -44,7 +44,7 @@
                 h3{
                     font-size: clamp(1.125rem, 0.875rem + 1.333vw, 1.875rem);
                     cursor: default;
-                    @include textShadow;
+                    @include textShadowAccent;
                     text-wrap: nowrap;
                 }
                 h1{
