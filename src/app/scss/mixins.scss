@@ -9,6 +9,36 @@
     font-size: clamp(1.7rem, 1.2rem + 2vw, 2.7rem);
     text-shadow: 1px 1px 5px var(--accent-color-contrast), 1px 1px 15px var(--accent-color-contrast);
 }
-@mixin textShadow(){
+@mixin textShadowAccent(){
     text-shadow: 0 0 15px var(--accent-color-contrast), 0 0 15px var(--accent-color-contrast), 0 0 10px var(--accent-color-contrast);
+}
+@mixin textShadowSecondary(){
+    text-shadow: 0 0 15px var(--secondary-color-contrast), 0 0 15px var(--secondary-color-contrast), 0 0 10px var(--secondary-color-contrast);
+}
+@mixin close(){
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    width: clamp(1.875rem, 1.25rem + 1.667vw, 2.5rem);
+    aspect-ratio: 1/1;
+    cursor: pointer;
+    margin: 5px;
+    border-radius: 50%;
+    outline: 3px solid var(--secondary-color-contrast);
+    box-shadow: 0 0 10px var(--secondary-color-contrast);
+    align-content: center;
+    text-align: center;
+    transition: transform .25s, box-shadow .25s;
+    svg{
+        fill: var(--secondary-color-contrast);
+        display: block;
+        margin: auto;
+    }
+    &:hover{
+        transform: scale(1.05);
+        box-shadow: 0 0 20px var(--secondary-color-contrast), 0 0 10px var(--secondary-color-contrast);
+    }
+    &:active{
+        transform: scale(0.95);
+    }
 }
