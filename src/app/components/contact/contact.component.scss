@@ -3,6 +3,7 @@
 .container{
     min-width: 300px;
     display: flex;
+    margin-top: 4em;
     flex-direction: column;
     padding-bottom: 5em;
     h2{
@@ -54,7 +55,7 @@
             .media-social{
                 display: flex;
                 gap: 1em;
-                margin-bottom: .5em;
+                margin: 1em 0;
                 svg{
                     border: 1px solid var(--secondary-color-contrast);
                     padding: 2px;
@@ -70,6 +71,7 @@
         }
         .form{
             width: 90%;
+            max-width: 400px;
             form{
                 border: 2px solid var(--accent-color-contrast);
                 box-shadow: inset 2px 2px 5px var(--accent-color-contrast),  2px 2px 5px var(--accent-color-contrast);
@@ -83,7 +85,7 @@
                 input{
                     width: 100%;
                     padding: .5em 1.5em;
-                    background-color: var(--primary-color-contrast);
+                    background-color: transparent;
                     color: var(--secondary-color-contrast);
                     box-shadow: inset 1px 1px 5px var(--accent-color-contrast), 1px 1px 5px var(--accent-color-contrast);
                     border-radius: 5px;
@@ -105,7 +107,7 @@
                     color: var(--secondary-color-contrast);
                     border: 2px solid var(--accent-color-contrast);
                     box-shadow: inset 1px 1px 5px var(--accent-color-contrast), 1px 1px 5px var(--accent-color-contrast);
-                    background-color: var(--primary-color-contrast);
+                    background-color: transparent;
                     &::placeholder{
                         color: var(--secondary-color-muted);
                         font-size: 14px;
@@ -122,7 +124,7 @@
                     cursor: pointer;
                     margin-top: 1em;
                     &:hover{
-                        box-shadow: 0 0 5px var(--secondary-color-contrast);
+                        outline: 2px solid var(--secondary-color-contrast);
                     }
                     &:active{
                         background-color: var(--accent-color-muted);
@@ -159,7 +161,7 @@
 @include mediaQuerie(large){
     .container{
         .contact{
-            max-width: 1200px;
+            max-width: 1000px;
             padding: 0 5em;
             justify-content: center;
             .content{
