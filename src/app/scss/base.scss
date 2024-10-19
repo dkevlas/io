@@ -11,8 +11,7 @@
     margin: 0;
 }
 ::selection{
-    background:  rgba(255,0,0,.2);
-    color: white;
+    background:  var(--accent-color-contrast);
 }
 body, p{
     font-weight: 300;

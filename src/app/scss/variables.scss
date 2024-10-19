@@ -34,10 +34,9 @@ $blanco-humo: #F1F1F1;
 $gris-plateado: #B4B4B4;
 $blanco-absoluto: #FFFFFF;
 //COLORES DE ACENTO
-$rojo-sangre: #8B0000;
-$rojo-oscuro: #560000;
-$rojo-brillante: #FF1111;
-
+$brisa-marina: #92cace;
+$bosque-acuatico: #3b757f;
+$esmeralda-oceanica: #356169;
 :root{
     --primary-color-default: #{$negro-intenso};
     --primary-color-muted: #{$gris-oscuro};
@@ -47,7 +46,7 @@ $rojo-brillante: #FF1111;
     --secondary-color-muted: #{$gris-plateado};
     --secondary-color-contrast: #{$blanco-absoluto};
 
-    --accent-color-default: #{$rojo-sangre};
-    --accent-color-muted: #{$rojo-oscuro};
-    --accent-color-contrast: #{$rojo-brillante};
+    --accent-color-default: #{$bosque-acuatico};
+    --accent-color-muted: #{$esmeralda-oceanica};
+    --accent-color-contrast: #{$brisa-marina};
 }

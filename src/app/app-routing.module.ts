@@ -17,6 +17,10 @@ const routes: Routes = [
     loadChildren: () => import('./components/projects/projects.module').then(module => module.ProjectsModule)
   },
   {
+    path: 'contacto',
+    loadChildren: () => import('./components/contact/contact.module').then(module => module.ContactModule)
+  },
+  {
     path: '**',
     component: NotFoundComponent
   },

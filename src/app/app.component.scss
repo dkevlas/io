@@ -8,5 +8,6 @@
     left: 0;
     bottom: 0;
     z-index: -10;
-    background-color: var(--primary-color-contrast);
+    background: rgb(26,44,50);
+    background: radial-gradient(circle, rgba(26,44,50,1) 0%, rgba(0,0,0,1) 100%);
 }
