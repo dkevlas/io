@@ -9,12 +9,12 @@
     position: sticky;
     top: 0;
     margin-bottom: -3em;
-    background-color: rgba($color: #000000, $alpha: 0.5);
+    background: radial-gradient(circle, rgba(26,44,50,.8) 0%, rgba(50,81,88,.7) 100%);
     backdrop-filter: blur(10px);
     z-index: $z-fixed;
     .logo{
         font-size: clamp(1.75rem, 1.75rem + 0.278vw, 2rem);
-        user-select: none;
+        @include textShadowAccent;
         color: var(--secondary-color-default);
         font-family: 'Bebas Neue', serif;
         z-index: $z-element;
@@ -23,9 +23,8 @@
         display: none;
         transition: left .25s;
         &.small{
-            background: radial-gradient(circle, rgba(255,0,0,.5) 0%, rgba(0,0,0,.5) 100%);
+            background: radial-gradient(circle, rgba(26,44,50,.8) 0%, rgba(50,81,88,.7) 100%);
             backdrop-filter: blur(10px);
-            box-shadow: 8px 0px 32px rgba(0,0,0,.5);
             position: fixed;
             top: 3rem;
             bottom: 0;
@@ -41,9 +40,8 @@
         }
         .link{
             cursor: pointer;
-            font-size: clamp(1rem, 0.857rem + 0.381vw, 1.2rem);
+            font-size: clamp(1rem, 0.559rem + 2.353vw, 1.5rem);
             color: var(--secondary-color-default);
-            //text-shadow: 0 0 5px var(--accent-color-contrast), 0 0 10px var(--accent-color-contrast);
             padding-left: .5em;
             &:hover{
                 text-decoration: underline;
@@ -51,11 +49,11 @@
         }
     }
     .menu-toggle{
+        z-index: $z-fixed;
         cursor: pointer;
         svg{
             width: 25px;
             fill: var(--secondary-color-default);
-            //filter: drop-shadow(0 0 5px var(--accent-color-contrast)) drop-shadow(0 0 10px var(--accent-color-contrast));
             &:hover{
                 color: var(--secondary-color-contrast);
             }
@@ -64,8 +62,22 @@
             }
         }
     }
+    .layer-menu{
+        position: fixed;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 100vh;
+        background-color: rgba($color: black, $alpha: .7);
+        z-index: $z-normal;
+        opacity: .5;
+        &.hidden{
+            display: none;
+        }
+    }
 }
-@include mediaQuerie(large){
+@include mediaQuerie(medium){
     .nav{
         .menu{
             &.large{
@@ -74,6 +86,9 @@
             }
         }
         .menu-toggle{
+            display: none;
+        }
+        .layer-menu{
             display: none;
         }
     }

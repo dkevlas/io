@@ -1,37 +1,71 @@
 @import '../../../styles.scss';
+
 .container{
-    position: relative;
+    position: fixed;
+    top: 0;
+    left: 0;
     width: 100%;
     height: 100vh;
     min-height: 550px;
-    .img{
-        width: 100%;
-        height: 100%;
-        position: absolute;
-        img{
-            width: 100%;
-            height: 100%;
-            display: block;
-            object-fit: cover;
-            object-position: 80% 0;
-            filter: brightness(.5);
+    background-color: var(--primary-color-muted);
+    .content{
+        width: clamp(12.5rem, 3.125rem + 25vw, 21.875rem);
+        margin: 7em auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 5px;
+        text-align: center;
+        color: var(--primary-color-contrast);
+        .logo{
+            svg{
+                width: 25%;
+                display: block;
+                margin: auto;
+                fill: var(--primary-color-contrast);
+            }
         }
-    }
-    .show{
-        position: absolute;
-        top: 10%;
-        left: 50%;
-        transform: translateX(-50%);
-        .go-back{
-            background-color: var(--primary-color-contrast);
-            padding: 1.5em 4em;
-            border-radius: 10px;
+        .code{
+            font-size: clamp(2.188rem, 0.938rem + 3.333vw, 3.438rem);
+            font-family: 'Libre Baskerville', sans-serif;
+            font-weight: bold;
+        }
+        span{
+            font-size: clamp(1.25rem, 0rem + 3.333vw, 2.5rem);
+            font-family: 'Courier New', Courier, monospace;
+            text-wrap: nowrap;
+        }
+        .back-home{
+            color: var(--primary-color-contrast);
+            font-size: clamp(1.25rem, 0.625rem + 1.667vw, 1.875rem);
+            border: 2px solid var(--primary-color-contrast);
+            padding: .5em 1em;
             cursor: pointer;
-            outline: 3px solid var(--secondary-color-contrast);
-            a{
-                pointer-events: none;
+            margin-top: 1em;
+            transition: background .25s, color .25s;
+            &:hover{
+                background-color: var(--primary-color-contrast);
                 color: var(--secondary-color-contrast);
-                font-size: clamp(2rem, 0.757rem + 6.63vw, 5rem);
+            }
+            &:active{
+                transform: scale(.95);
+            }
+        }
+        .back{
+            cursor: pointer;
+            padding: 5px;
+            transition: transform .25s;
+            svg{
+                display: block;
+                fill: var(--primary-color-contrast);
+                outline: 2px solid var(--primary-color-contrast);
+                border-radius: 50%;
+            }
+            &:hover{
+                transform: scale(1.05);
+            }
+            &:Active{
+                transform: scale(0.95);
             }
         }
     }

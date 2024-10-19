@@ -89,13 +89,13 @@
                     color: var(--secondary-color-default);
                     border-radius: 5px;
                     box-shadow: 5px 5px 5px var(--accent-color-contrast);
-                    transition: transform .25s, background .25s, color .25s;
+                    transition: transform .25s, background .2s, color .25s;
                     cursor: pointer;
                     a{
                         color: var(--secondary-color-default);
                     }
                     &:hover{
-                        background-color: var(--primary-color-default);
+                        background-color: var(--accent-color-contrast);
                         transform: scale(1.05);
                     }
                     &:active{

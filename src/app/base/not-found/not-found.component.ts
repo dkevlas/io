@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-
+import { Location } from '@angular/common';
 @Component({
   selector: 'app-not-found',
   templateUrl: './not-found.component.html',
@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class NotFoundComponent {
 
+  constructor(private location: Location){}
+
+  back(){
+    this.location.back()
+  }
 }

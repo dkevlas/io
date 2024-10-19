@@ -33,14 +33,9 @@ export class ProjectsComponent implements OnInit{
       }
     }
   }
-  showImages(project: number){
-    //console.log(project)
-  }
-
   //RUTAS VARIABLES
 
   routeProject(titleId: string): void{
-    console.log(titleId)
     this.router.navigate(['/proyectos', titleId])
   }
 }

@@ -23,21 +23,25 @@ export class NavbarComponent {
   }
 
   screenSize(){
-    const screem = window.matchMedia('(min-width: 1024px)').matches;
+    const screem = window.matchMedia('(min-width: 640px)').matches;
     if(screem){
       this.active = false
       this.modeMobile = false
       this.modeDesktop = true
+      console.log('SCREEM mayor: ',this.layerHidden)
     } else{
       this.modeMobile = true
       this.modeDesktop = false
+      this.leftNavMobile == '0px' ? this.layerHidden = false : ''
+      console.log('SCREEN menor: ',this.layerHidden)
     }
   }
 
   leftNavMobile: string = '-200px'
-
+  layerHidden: boolean = true
   menuToggle(){
     this.active = !this.active
+    this.layerHidden = !this.layerHidden
     if(this.active){
       if(this.active && this.leftNavMobile == '0px' ){
         this.leftNavMobile = '-200px'
@@ -48,10 +52,13 @@ export class NavbarComponent {
     } else{
         this.leftNavMobile = '-200px'
     }
+    console.log('TOGGLE LAYER ',this.layerHidden)
   }
 
   clickMenu(){
     this.leftNavMobile = '-200px'
     this.active = !this.active
+    this.layerHidden = true
+    console.log('layer OCULTO: ', this.layerHidden)
   }
 }
