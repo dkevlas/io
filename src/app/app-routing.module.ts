@@ -4,12 +4,12 @@ import { NotFoundComponent } from './base/not-found/not-found.component';
 
 const routes: Routes = [
   {
-    path: 'inicio',
+    path: '',
     loadChildren: () => import('./components/home/home.module').then(module => module.HomeModule)
   },
   {
-    path: '',
-    redirectTo: 'inicio',
+    path: 'inicio',
+    redirectTo: '',
     pathMatch: 'full'
   },
   {
