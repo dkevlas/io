@@ -14,7 +14,7 @@ Aquí hay algunos de los proyectos en los que he trabajado:
 
 Estos proyectos son una interpretación de un diseño web que encontré en Pinterest. He utilizado HTML, CSS, SASS, JavaScript, TypeScript y Angular para replicar su estructura y estilo, enfocándome en la usabilidad y la experiencia del usuario. Y he decidido aplicar técnicas de diseño responsivo.
 
-1. **[Your Name](https://github.com/dkevlas/GameOfThonesClone.git)**
+1. **[Game of Thrones](https://github.com/dkevlas/GameOfThonesClone.git)**
    - Tecnologías: HTML, CSS, SASS, Angular.
 
 2. **[Your Name](https://github.com/dkevlas/YourNameClone.git)**
