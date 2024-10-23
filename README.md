@@ -37,7 +37,7 @@ Estos proyectos son una interpretación de un diseño web que encontré en Pinte
 Si deseas saber más sobre mí o discutir sobre una posible colaboración, no dudes en contactarme:
 
 - Correo: [dennisk.blas@gmail.com](dennisk.blas@gmail.com)
-- LinkedIn: [mi-usuario](enlace-linkedin)
+- LinkedIn: [dkevlas](https://www.linkedin.com/in/dkevlas/)
 - GitHub: [dkevlas](https://github.com/dkevlas)
 
 ¡Gracias por visitar mi portafolio!
