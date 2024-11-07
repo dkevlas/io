@@ -1,9 +1,16 @@
 <div class="container">
     <div class="bg"></div>
     <div class="content">
-        <h2>Sobre mi</h2>
-    <p>
-        Después de estudiar Redes, descubrí mi pasión por el Desarrollo Full Stack. Creo que nunca es tarde para aprender y trabajar en lo que amas. He adquirido conocimientos en HTML, CSS, SASS, JavaScript, TypeScript y Angular, y sigo mejorando cada día. Mi próximo objetivo es profundizar en Node.js, Java y Spring Boot. Aspiro a ser Desarrollador Full Stack, enfocándome en tecnologías que impulsen mi crecimiento profesional y me permitan contribuir a proyectos futuros.
-    </p>
+        <button class="show-info" (click)="showInfo()">Sobre mi</button>
+    <div class="info" *ngIf="isActive">
+        <div class="text">
+            <p>
+                Después de estudiar Redes, descubrí mi pasión por el Desarrollo Full Stack. Estoy convencido de que nunca es tarde para aprender y trabajar en lo que amas. He adquirido habilidades en HTML, CSS, SASS, JavaScript, TypeScript y Angular, y me esfuerzo por mejorar cada día. Recientemente he estado aprendiendo sobre Node.js, Express y MongoDB, lo que me ha permitido expandir mis conocimientos. Mi próximo objetivo es profundizar en bases de datos SQL utilizando Sequelize, y como último paso, aprender Java y Spring Boot, ya que sé que esto requiere más tiempo. Aspiro a ser Desarrollador Full Stack y busco oportunidades de prácticas para ganar experiencia y contribuir a proyectos innovadores en el futuro.
+            </p>
+            <button (click)="showInfo()" class="close-info">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg>
+            </button>
+        </div>
+    </div>
     </div>
 </div>

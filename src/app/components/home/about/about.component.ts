@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AboutComponent {
 
+  isActive: boolean = false;
+
+  showInfo(){
+    this.isActive = !this.isActive;
+  };
 }
