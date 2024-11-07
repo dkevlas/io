@@ -43,7 +43,7 @@ export class HomeComponent implements AfterViewInit, OnDestroy{
     }, 300)
   }
 
-  linkCV: string = 'https://drive.google.com/uc?id=1nPkR3UC0PLGtRYwpltVjT4dz6Qcyfo5S&export=download'
+  linkCV: string = 'https://drive.google.com/uc?export=download&id=1Fx-_2favRi-lGo8Sx5vdDBZnimh3P10g'
   downLoadCV(){
     const link = document.createElement('a'); 
     link.href = this.linkCV;

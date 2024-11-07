@@ -17,6 +17,20 @@ export interface Projects {
 
 export const projects: Projects[] = [
     {
+        idProject: 'harry-potter',
+        title: 'Harry Potter',
+        imgOriginal: 'https://my-design-imitations.s3.us-east-2.amazonaws.com/design-04-Harry-Potter/original.webp',
+        description: ' He desarrollado una versión responsive e interactiva, donde no solo he replicado el diseño, sino que también he creado acciones para esos botones, aportando así una nueva dimensión al proyecto.',
+        images: {
+            small: 'https://my-design-imitations.s3.us-east-2.amazonaws.com/design-04-Harry-Potter/small.jpg',
+            medium: 'https://my-design-imitations.s3.us-east-2.amazonaws.com/design-04-Harry-Potter/medium.jpg',
+            large: 'https://my-design-imitations.s3.us-east-2.amazonaws.com/design-04-Harry-Potter/large.jpg',
+        },
+        codeRepo: 'https://dkevlas.github.io/harry-potter/',
+        technology: ['HTML', 'SASS', 'TYPESCRIPT', 'ANGULAR'],
+        link: 'https://dkevlas.github.io/harry-potter/'
+    },
+    {
         idProject: 'game-of-thrones',
         title: 'Game Of Thrones',
         imgOriginal: 'https://my-design-imitations.s3.us-east-2.amazonaws.com/design-03-Game-Of-Thrones/light/Design-Original.jpg',
@@ -55,5 +69,5 @@ export const projects: Projects[] = [
         },
         codeRepo: 'https://github.com/dkevlas/NativeClone.git',
         technology: ['HTML', 'SASS'],
-    },
+    }
 ]
