@@ -28,12 +28,10 @@ export class NavbarComponent {
       this.active = false
       this.modeMobile = false
       this.modeDesktop = true
-      console.log('SCREEM mayor: ',this.layerHidden)
     } else{
       this.modeMobile = true
       this.modeDesktop = false
       this.leftNavMobile == '0px' ? this.layerHidden = false : ''
-      console.log('SCREEN menor: ',this.layerHidden)
     }
   }
 
