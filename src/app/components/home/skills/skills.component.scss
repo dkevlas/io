@@ -12,7 +12,7 @@
     .items{
         display: flex;
         justify-content: center;
-        align-items: center;
+        align-items: start;
         flex-wrap: wrap;
         gap: 10px;
         margin-bottom: 2em;
@@ -54,10 +54,7 @@
                         width:clamp(1.563rem, 1.136rem + 2.131vw, 2.5rem);
                         aspect-ratio: 1/1;
                         display: block;
-                        object-fit: cover;
-                    }
-                    &.active{
-                        filter: grayscale(0);
+                        object-fit: contain;
                     }
                 }
             }

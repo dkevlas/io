@@ -5,17 +5,31 @@
             <div class="block">
                 <h3>Desarrollo Frontend</h3>
                 <div class="flex">
-                    <div [ngClass]="{'item': item, 'active': i === indexFrontend}" *ngFor="let item of items; let i = index" (mouseover)="mouseIn(i)" (mouseleave)="mouseOut(i)">
-                        <img [src]="item.img" alt="{{item.name}}" title="{{item.name}}">
-                    </div>
+                    @for (item of logos[0]; track $index) {
+                        <div class="item" #frontend (mouseover)="inSkill(frontend)" (mouseleave)="outSkill(frontend)">
+                            <img [src]="item.img" alt="{{item.name}}" title="{{item.name}}">
+                        </div>
+                    }
+                </div>
+            </div>
+            <div class="block">
+                <h3>Desarrolo Backend</h3>
+                <div class="flex">
+                    @for (item of logos[1]; track $index) {
+                        <div class="item" #backend (mouseover)="inSkill(backend)" (mouseleave)="outSkill(backend)">
+                            <img [src]="item.img" alt="{{item.name}}" title="{{item.name}}">
+                        </div>
+                    }
                 </div>
             </div>
             <div class="block">
                 <h3>Tecnologías y Herramientas</h3>
                 <div class="flex">
-                    <div [ngClass]="{'item': item, 'active': i === indexHerramientas}" *ngFor="let item of items2; let i = index" (mouseover)="mouseIn2(i)" (mouseleave)="mouseOut2(i)">
-                        <img [src]="item.img" alt="{{item.name}}" title="{{item.name}}">
-                    </div>
+                    @for (item of logos[2]; track $index) {
+                        <div class="item"  #tools (mouseover)="inSkill(tools)" (mouseleave)="outSkill(tools)">
+                            <img [src]="item.img" alt="{{item.name}}" title="{{item.name}}">
+                        </div>
+                    }
                 </div>
             </div>
         </div>

@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { backend, frontend, Logo, tools } from './dataLogos';
 
 interface Item {
   name: string,
@@ -12,80 +13,12 @@ interface Item {
 })
 export class SkillsComponent {
 
-  items: Item[] = [
-    {
-      name: 'HTML5',
-      img: 'https://global-media-repository.s3.us-east-2.amazonaws.com/io/skills/html-5.png'
-    },
-    {
-      name: 'CSS3',
-      img: 'https://global-media-repository.s3.us-east-2.amazonaws.com/io/skills/css-3.png'
-    },
-    {
-      name: 'SASS',
-      img: 'https://global-media-repository.s3.us-east-2.amazonaws.com/io/skills/sass.png'
-    },
-    {
-      name: 'JavaScript',
-      img: 'https://global-media-repository.s3.us-east-2.amazonaws.com/io/skills/javascript.png'
-    },
-    {
-      name: 'TypeScript',
-      img: 'https://global-media-repository.s3.us-east-2.amazonaws.com/io/skills/typescript.png',
-    },
-    {
-      name: 'Angular',
-      img: 'https://global-media-repository.s3.us-east-2.amazonaws.com/io/skills/angular.png'
-    }
-  ]
+  logos: Logo[][] = [frontend, backend, tools];
 
-  items2: Item[] = [
-    {
-      name: 'Ilustrator',
-      img: 'https://global-media-repository.s3.us-east-2.amazonaws.com/io/skills/ilustrador.png'
-    },
-    {
-      name: 'Photoshop',
-      img: 'https://global-media-repository.s3.us-east-2.amazonaws.com/io/skills/photoshop.png'
-    },
-    {
-      name: 'S3',
-      img: 'https://global-media-repository.s3.us-east-2.amazonaws.com/io/skills/simple-storage-service.png'
-    },
-    {
-      name: 'Linux',
-      img: 'https://global-media-repository.s3.us-east-2.amazonaws.com/io/skills/linux.png'
-    },
-    {
-      name: 'Git',
-      img: 'https://global-media-repository.s3.us-east-2.amazonaws.com/io/skills/git.png'
-    },
-    {
-      name: 'GitHub',
-      img: 'https://global-media-repository.s3.us-east-2.amazonaws.com/io/skills/github.png'
-    }
-  ]
-
-  item: boolean = true
-  indexFrontend: number | undefined
-  indexHerramientas: number | undefined
-
-  event(n: number){
-    this.indexFrontend = n
+  inSkill(element: HTMLElement){
+    element.style.filter = 'grayscale(0)'
   }
-  mouseIn(n: number){
-    this.event(n)
-  }
-  mouseOut(n: number){
-    this.indexFrontend = undefined
-  }
-  event2(n: number){
-    this.indexHerramientas = n
-  }
-  mouseIn2(n: number){
-    this.event2(n)
-  }
-  mouseOut2(n: number){
-    this.indexHerramientas = undefined
+  outSkill(element: HTMLElement){
+    element.style.filter = 'grayscale(1)'
   }
 }
