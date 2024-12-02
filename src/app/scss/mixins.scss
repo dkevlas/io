@@ -7,6 +7,9 @@
     cursor: default;
     color: var(--secondary-color-contrast);
     font-size: clamp(1.7rem, 1.2rem + 2vw, 2.7rem);
+    width: 95%;
+    margin: auto;
+    text-align: center;
     text-shadow: 1px 1px 5px var(--accent-color-contrast), 1px 1px 15px var(--accent-color-contrast);
 }
 @mixin textShadowAccent(){

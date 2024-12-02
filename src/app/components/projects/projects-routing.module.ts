@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { ProjectsComponent } from './projects.component';
-import { ProjectComponent } from './project/project.component';
+import { CloneComponent } from './project-clone/clone/clone.component';
 
 const routes: Routes = [
   {
@@ -10,7 +10,7 @@ const routes: Routes = [
     children: [
       {
         path: ':proyecto',
-        component: ProjectComponent
+        component: CloneComponent
       },
     ]
   },
