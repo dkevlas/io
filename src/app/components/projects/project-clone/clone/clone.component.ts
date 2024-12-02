@@ -1,15 +1,14 @@
-import { Component, OnInit} from '@angular/core';
+import { Component } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import { projects } from '../listProject';
+import { projects } from '../../listProject';
 import { Location } from '@angular/common';
 
 @Component({
-  selector: 'app-project',
-  templateUrl: './project.component.html',
-  styleUrl: './project.component.scss'
+  selector: 'app-clone',
+  templateUrl: './clone.component.html',
+  styleUrl: './clone.component.scss'
 })
-export class ProjectComponent implements OnInit {
-
+export class CloneComponent {
   project: any | undefined
   notFound: boolean = false
   constructor(private route: ActivatedRoute, private location: Location){}
@@ -23,7 +22,6 @@ export class ProjectComponent implements OnInit {
       document.body.style.overflow = 'hidden'
     }
   }
-
   active: number = 0
   modeScreen: string[] = [
     'Celular', 'Tablet', 'Escritorio'

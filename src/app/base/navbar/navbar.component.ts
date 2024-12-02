@@ -50,13 +50,11 @@ export class NavbarComponent {
     } else{
         this.leftNavMobile = '-200px'
     }
-    console.log('TOGGLE LAYER ',this.layerHidden)
   }
 
   clickMenu(){
     this.leftNavMobile = '-200px'
     this.active = !this.active
     this.layerHidden = true
-    console.log('layer OCULTO: ', this.layerHidden)
   }
 }

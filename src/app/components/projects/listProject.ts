@@ -12,9 +12,13 @@ export interface Projects {
     images: Image,
     link?: string,
     codeRepo?: string,
-    technology: string[]
+    technology: Tech[]
 }
 
+interface Tech {
+    name: string,
+    ico: string
+}
 export const projects: Projects[] = [
     {
         idProject: 'harry-potter',
@@ -27,7 +31,24 @@ export const projects: Projects[] = [
             large: 'https://my-design-imitations.s3.us-east-2.amazonaws.com/design-04-Harry-Potter/large.jpg',
         },
         codeRepo: 'https://dkevlas.github.io/harry-potter/',
-        technology: ['HTML', 'SASS', 'TYPESCRIPT', 'ANGULAR'],
+        technology: [
+            {
+                name: 'HTML',
+                ico: 'https://global-media-repository.s3.us-east-2.amazonaws.com/io/icons-svg/html.svg',
+            },
+            {
+                name: 'SCSS',
+                ico: 'https://global-media-repository.s3.us-east-2.amazonaws.com/io/icons-svg/sass.svg', 
+            },
+            {
+                name: 'TYPESCRIPT',
+                ico: 'https://global-media-repository.s3.us-east-2.amazonaws.com/io/icons-svg/typescript.svg', 
+            },
+            {
+                name: 'ANGULAR',
+                ico: 'https://global-media-repository.s3.us-east-2.amazonaws.com/io/icons-svg/angular.svg'
+            }            
+        ],
         link: 'https://dkevlas.github.io/harry-potter/'
     },
     {
@@ -41,7 +62,24 @@ export const projects: Projects[] = [
             large: 'https://my-design-imitations.s3.us-east-2.amazonaws.com/design-03-Game-Of-Thrones/light/Laptop-Standard.webp'
         },
         codeRepo: 'https://github.com/dkevlas/GameOfThonesClone.git',
-        technology: ['HTML', 'SASS', 'TYPESCRIPT', 'ANGULAR'],
+        technology: [
+            {
+                name: 'HTML',
+                ico: 'https://global-media-repository.s3.us-east-2.amazonaws.com/io/icons-svg/html.svg',
+            },
+            {
+                name: 'SCSS',
+                ico: 'https://global-media-repository.s3.us-east-2.amazonaws.com/io/icons-svg/sass.svg', 
+            },
+            {
+                name: 'TYPESCRIPT',
+                ico: 'https://global-media-repository.s3.us-east-2.amazonaws.com/io/icons-svg/typescript.svg', 
+            },
+            {
+                name: 'ANGULAR',
+                ico: 'https://global-media-repository.s3.us-east-2.amazonaws.com/io/icons-svg/angular.svg'
+            }  
+        ],
         link: 'https://dkevlas.github.io/got-web/'
     },
     {
@@ -55,7 +93,20 @@ export const projects: Projects[] = [
             large: 'https://my-design-imitations.s3.us-east-2.amazonaws.com/design-01-Your-Name/light/Laptop-Standard.webp'
         },
         codeRepo: 'https://github.com/dkevlas/YourNameClone.git',
-        technology: ['HTML', 'SASS', 'ANGULAR']
+        technology: [
+            {
+                name: 'HTML',
+                ico: 'https://global-media-repository.s3.us-east-2.amazonaws.com/io/icons-svg/html.svg',
+            },
+            {
+                name: 'SCSS',
+                ico: 'https://global-media-repository.s3.us-east-2.amazonaws.com/io/icons-svg/sass.svg', 
+            },
+            {
+                name: 'ANGULAR',
+                ico: 'https://global-media-repository.s3.us-east-2.amazonaws.com/io/icons-svg/angular.svg'
+            }
+        ]
     },
     {
         idProject: 'native',
@@ -68,6 +119,15 @@ export const projects: Projects[] = [
             large: 'https://my-design-imitations.s3.us-east-2.amazonaws.com/design-02-Native/light/Laptop-Standard.webp'
         },
         codeRepo: 'https://github.com/dkevlas/NativeClone.git',
-        technology: ['HTML', 'SASS'],
+        technology: [
+            {
+                name: 'HTML',
+                ico: 'https://global-media-repository.s3.us-east-2.amazonaws.com/io/icons-svg/html.svg',
+            },
+            {
+                name: 'SCSS',
+                ico: 'https://global-media-repository.s3.us-east-2.amazonaws.com/io/icons-svg/sass.svg', 
+            },
+        ],
     }
 ]

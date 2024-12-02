@@ -27,7 +27,15 @@ export const frontend: Logo[] = [
     {
         name: 'Angular',
         img: 'https://global-media-repository.s3.us-east-2.amazonaws.com/io/skills/frontend/angular.png'
-    }
+    },
+    {
+        name: 'Tailwind CSS',
+        img: 'https://global-media-repository.s3.us-east-2.amazonaws.com/io/skills/frontend/TailwindCSS.png'
+    },
+    {
+        name: 'React',
+        img: 'https://global-media-repository.s3.us-east-2.amazonaws.com/io/skills/frontend/React.png', 
+    },
 ]
 
 export const backend: Logo[] = [
