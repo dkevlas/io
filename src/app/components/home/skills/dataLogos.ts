@@ -4,17 +4,17 @@ export interface Logo {
 };
 
 export const frontend: Logo[] = [
+    // {
+    //     name: 'HTML5',
+    //     img: 'https://global-media-repository.s3.us-east-2.amazonaws.com/io/skills/frontend/html-5.png'
+    // },
+    // {
+    //     name: 'CSS3',
+    //     img: 'https://global-media-repository.s3.us-east-2.amazonaws.com/io/skills/frontend/css-3.png'
+    // },
     {
-        name: 'HTML5',
-        img: 'https://global-media-repository.s3.us-east-2.amazonaws.com/io/skills/frontend/html-5.png'
-    },
-    {
-        name: 'CSS3',
-        img: 'https://global-media-repository.s3.us-east-2.amazonaws.com/io/skills/frontend/css-3.png'
-    },
-    {
-        name: 'SASS',
-        img: 'https://global-media-repository.s3.us-east-2.amazonaws.com/io/skills/frontend/sass.png'
+        name: 'React',
+        img: 'https://global-media-repository.s3.us-east-2.amazonaws.com/io/skills/frontend/React.png', 
     },
     {
         name: 'JavaScript',
@@ -33,8 +33,8 @@ export const frontend: Logo[] = [
         img: 'https://global-media-repository.s3.us-east-2.amazonaws.com/io/skills/frontend/TailwindCSS.png'
     },
     {
-        name: 'React',
-        img: 'https://global-media-repository.s3.us-east-2.amazonaws.com/io/skills/frontend/React.png', 
+        name: 'SASS',
+        img: 'https://global-media-repository.s3.us-east-2.amazonaws.com/io/skills/frontend/sass.png'
     },
 ]
 
